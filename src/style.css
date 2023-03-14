@@ -9,39 +9,3 @@
 body {
   font-family: 'Raleway', serif;
 }
-
-header {
-  padding: 20px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-header div img {
-  height: 60px;
-  width: 60px;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  align-items: center;
-}
-
-header nav ul li a {
-  font-size: 20px;
-  font-weight: 600;
-  color: black;
-  text-decoration: none;
-}
-
-header nav ul li a:hover {
-  text-decoration: underline;
-}
