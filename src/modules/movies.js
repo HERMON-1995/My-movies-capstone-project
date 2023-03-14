@@ -17,16 +17,14 @@ const generateMovieTile = (movie) => {
   const commentsButton = movieTile.querySelector('.movie-interactions > button');
   commentsButton.addEventListener('click', () => {
     // Add comments popup code here
-    console.log('Comments button clicked', movie);
   });
 
   const likeButton = movieTile.querySelector('.fa-heart');
   likeButton.addEventListener('click', () => {
     // Add like button code here
-    console.log('Like button clicked', movie);
   });
 
   return movieTile;
 };
 
-export { generateMovieTile };
+export default generateMovieTile;

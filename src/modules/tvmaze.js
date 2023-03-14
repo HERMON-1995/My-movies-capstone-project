@@ -10,11 +10,11 @@ const getShow = async (id) => {
 
 const getSelectedShows = async () => {
   const showsData = [];
-  for (let i = 0; i < shows.length; i++) {
+  for (let i = 0; i < shows.length; i += 1) {
     const show = await getShow(shows[i]);
     showsData.push(show);
   }
   return showsData;
 };
 
-export { getSelectedShows };
+export default getSelectedShows;

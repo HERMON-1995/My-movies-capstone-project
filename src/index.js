@@ -1,6 +1,6 @@
 import './style.css';
-import { getSelectedShows } from './modules/tvmaze';
-import { generateMovieTile } from './modules/movies';
+import getSelectedShows from './modules/tvmaze.js';
+import generateMovieTile from './modules/movies.js';
 
 const initialize = async () => {
   const selectedShows = await getSelectedShows();
