@@ -1,5 +1,4 @@
-/* eslint-disable import/no-cycle */
-import showPopup from '../index.js';
+import showPopup from './popup.js';
 
 const generateMovieTile = (movie) => {
   const movieTile = document.createElement('div');
