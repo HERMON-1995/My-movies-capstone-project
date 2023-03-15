@@ -141,6 +141,7 @@ main {
   float: right;
   width: 100%;
   text-align: right;
+  cursor: pointer;
 }
 
 .popup-img {
