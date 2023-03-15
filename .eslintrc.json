@@ -14,6 +14,7 @@
       "no-shadow": "off",
       "no-param-reassign": "off",
       "eol-last": "off",
+      "no-await-in-loop": "off",
       "import/extensions": [ 1, {
         "js": "always", "json": "always"
       }]
@@ -23,4 +24,3 @@
       "build/"
     ]
   }
-  
