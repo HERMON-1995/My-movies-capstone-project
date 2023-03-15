@@ -119,7 +119,7 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 50px;
+  padding: 50px 0;
   z-index: 999;
 }
 
@@ -135,6 +135,7 @@ main {
   background-color: white;
   padding: 20px;
   border: 2px solid;
+  width: 500px;
 }
 
 .close-btn {
@@ -154,7 +155,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  width: 400px;
+  max-width: 400px;
 }
 
 .popup-description {
@@ -170,6 +171,7 @@ main {
   align-items: center;
   font-weight: 500;
   gap: 20px;
+  width: 100%;
 }
 
 .comment-section h3 {
@@ -241,5 +243,14 @@ footer {
 
   .movie-tile {
     width: 40%;
+  }
+
+  .popup-container {
+    padding: 0;
+  }
+
+  .popup {
+    width: 100%;
+    border: none;
   }
 }
