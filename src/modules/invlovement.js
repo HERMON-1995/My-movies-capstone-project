@@ -1,5 +1,5 @@
 const baseUrl = "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi";
-const appID = "X56DIL9SbEaDt8sfqJy7";
+const appID = "NPgV5E1zHcIqM2oujsnW";
 
 const getLikes = async () => {
   const response = await fetch(`${baseUrl}/apps/${appID}/likes`);
@@ -9,6 +9,7 @@ const getLikes = async () => {
 
 const getMovieLikes = async (id) => {
   let allLikes = await getLikes();
+  allLikes ||= "[]";
   allLikes = JSON.parse(allLikes);
 
   const like = allLikes.find((like) => like.item_id === id);
