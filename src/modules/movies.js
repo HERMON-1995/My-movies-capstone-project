@@ -1,3 +1,6 @@
+/* eslint-disable import/no-cycle */
+import showPopup from '../index.js';
+
 const generateMovieTile = (movie) => {
   const movieTile = document.createElement('div');
   movieTile.classList.add('movie-tile');
@@ -16,7 +19,7 @@ const generateMovieTile = (movie) => {
 
   const commentsButton = movieTile.querySelector('.movie-interactions > button');
   commentsButton.addEventListener('click', () => {
-    // Add comments popup code here
+    showPopup(movie);
   });
 
   const likeButton = movieTile.querySelector('.fa-heart');
