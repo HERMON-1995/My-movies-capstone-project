@@ -72,13 +72,13 @@ Webpack, linters and jest.
 Clone this repository to your desired folder:
 
 ```sh
-  cd Leaderboard-list-app-project
-  git clone https://github.com/HERMON-1995/Leaderboard-list-app-project.git
+  cd Module-2-capstone-project
+  git clone https://github.com/HERMON-1995/Module-2-capstone-project.git
 ```
 ### Install
  
  ```sh
- cd Leaderboard-list-app-project
+ cd Module-2-capstone-project
  ```
  ```sh
  npm install
