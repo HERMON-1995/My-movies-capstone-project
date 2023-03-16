@@ -46,6 +46,12 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
+#count-display {
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+}
+
 main {
   display: flex;
   justify-content: center;

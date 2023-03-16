@@ -1,6 +1,7 @@
 import './style.css';
 import getSelectedShows from './modules/tvmaze.js';
 import generateMovieTile from './modules/movies.js';
+import countMovies from './modules/movies-counter.js';
 import { createComment } from './modules/invlovement.js';
 
 const initialize = async () => {
@@ -11,6 +12,10 @@ const initialize = async () => {
     const movieTile = await generateMovieTile(selectedShows[i]);
     moviesContainer.appendChild(movieTile);
   }
+
+  const movieCount = countMovies();
+  const countDisplay = document.querySelector('#count-display');
+  countDisplay.innerHTML = `(${movieCount})`;
 
   const form = document.querySelector('form');
   form.addEventListener('submit', (event) => {
