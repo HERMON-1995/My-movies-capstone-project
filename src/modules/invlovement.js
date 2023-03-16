@@ -65,7 +65,7 @@ const displayComments = async (itemId) => {
   comments.forEach((comment) => {
     const li = document.createElement('li');
     li.className = 'usercomments';
-    li.innerHTML = `<span class="date">${comment.creation_date}</span>📽️<span class="date">${comment.username}: </span><span class="date">"${comment.comment}"</span>`;
+    li.innerHTML = `<span class="date">|${comment.creation_date}|</span>📽️<span class="date">${comment.username}: </span><span class="date">"${comment.comment}"</span>`;
     commentList.appendChild(li);
   });
 
