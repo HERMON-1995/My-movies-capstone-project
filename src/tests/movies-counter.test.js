@@ -5,6 +5,19 @@
 import countMovies from '../modules/movies-counter.js';
 
 describe('Test movie counter', () => {
+  it('Should return 0 when there are no movies on the page', () => {
+    // Arrange
+    document.body.innerHTML = `
+      <main></main>
+    `;
+
+    // Act
+    const movieCount = countMovies();
+
+    // Assert
+    expect(movieCount).toBe(0);
+  });
+
   it('Should count all movies displayed on the page', () => {
     // Arrange
     document.body.innerHTML = `
