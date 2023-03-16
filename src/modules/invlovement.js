@@ -1,3 +1,5 @@
+import commentCounter from './comments-counter.js';
+
 const baseUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi';
 const appID = 'NPgV5E1zHcIqM2oujsnW';
 const commentList = document.querySelector('.comments');
@@ -53,9 +55,14 @@ const getComments = async (itemId) => {
   }
 };
 
+const commentTitle = document.querySelector('.comment-counter');
+
 const displayComments = async (itemId) => {
   commentList.innerHTML = '';
+  commentTitle.innerHTML = 'Comments(0)';
   const comments = await getComments(itemId);
+
+  commentCounter(comments, commentTitle);
 
   comments.forEach((comment) => {
     const li = document.createElement('li');
