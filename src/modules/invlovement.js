@@ -33,7 +33,79 @@ const addLike = async (id) => {
   return data;
 };
 
+let movieId;
+
+const setMovieId = (id) => {
+  movieId = `movie${id}`;
+};
+
+const getMovieId = () => movieId;
+
+const getComments = async (itemId) => {
+  try {
+    const url = `${baseUrl}/apps/${appID}/comments?item_id=${itemId}`;
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error(error);
+    return null;
+  }
+};
+const commentList = document.querySelector('.comments');
+
+const displayComments = async (itemId) => {
+  commentList.innerHTML = '';
+  const comments = await getComments(itemId);
+
+  comments.forEach((comment) => {
+    const li = document.createElement('li');
+    li.className = 'usercomments';
+    li.innerHTML = `<span class="date">${comment.creation_date}</span>📽️<span class="date">${comment.username}: </span><span class="date">"${comment.comment}"</span>`;
+    commentList.appendChild(li);
+  });
+};
+
+const addComment = async (itemId, name, comment) => {
+  const url = `${baseUrl}/apps/${appID}/comments`;
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      item_id: itemId,
+      username: name,
+      comment,
+    }),
+  });
+  const data = await response.text();
+  displayComments(itemId);
+  return data || null;
+};
+
+const createComment = () => {
+  const usernameField = document.querySelector('.name');
+  const commentField = document.querySelector('.comment');
+  const username = usernameField.value;
+  const comment = commentField.value;
+
+  addComment(movieId, username, comment);
+
+  usernameField.value = '';
+  commentField.value = '';
+};
+
+const form = document.querySelector('form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  createComment();
+});
+
 export {
   addLike,
   getMovieLikes,
+  setMovieId,
+  getMovieId,
+  displayComments,
 };
