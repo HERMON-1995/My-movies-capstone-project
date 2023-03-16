@@ -1,4 +1,6 @@
-import { addLike, getMovieLikes, setMovieId, displayComments, getMovieId } from './invlovement.js';
+import {
+  addLike, getMovieLikes, setMovieId, displayComments, getMovieId,
+} from './invlovement.js';
 import showPopup from './popup.js';
 
 const generateMovieTile = async (movie) => {
