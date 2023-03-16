@@ -8,13 +8,28 @@
 
 body {
   font-family: 'Raleway', serif;
+  background-image: url('./images/Body\ background.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header,
+footer,
+main,
+.popup {
+  display: flex;
+  background-image: url('./images/Main\ background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
   padding: 20px 60px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid rgb(155, 108, 22);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .logo {
@@ -53,13 +68,14 @@ header nav ul li a:hover {
 }
 
 main {
-  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
   padding: 20px;
   margin: 50px auto;
   max-width: 1000px;
+  box-shadow: 12px 12px 12px rgb(149, 102, 14);
+  border-radius: 10px;
 }
 
 .movie-tile {
@@ -69,6 +85,10 @@ main {
 
 .movie-poster > img {
   width: 100%;
+}
+
+.movie-poster img:hover {
+  width: 95%;
 }
 
 .movie-info {
@@ -215,6 +235,10 @@ main {
   font-size: 20px;
 }
 
+.usercomments span {
+  font-weight: 600;
+}
+
 .comments {
   list-style: none;
   font-size: 16px;
@@ -256,15 +280,15 @@ form .submit:hover {
 }
 
 footer {
-  display: flex;
   align-items: center;
   border: 3px solid;
-  height: 10vh;
-  margin: 20px auto;
+  height: 12vh;
+  margin: 10px auto;
   width: 95%;
   padding: 20px;
   font-size: 20px;
   font-weight: 600;
+  border-radius: 10px;
 }
 
 /* Other screen widths */
