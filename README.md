@@ -54,6 +54,15 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [See live here](https://hermon-1995.github.io/Module-2-capstone-project/dist/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -64,7 +73,6 @@ In order to run this project you need:
 
 ```sh
 Webpack, linters and jest.
- vs code
 ```
 
 ### Setup
@@ -111,7 +119,7 @@ npx eslint .
 
 ### Deployment
 
-- (Deployment method using GitHub pages)
+- GitHub pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,13 +130,13 @@ npx eslint .
 👤 **Author1**
  *[HERMON Gebre]*
  
-- GitHub: [@githubhandle](https://github.com/HERMON-1995)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/hermon-gebre-03290a228/)
+- [GitHub profile](https://github.com/HERMON-1995)
+- [LinkedIn](https://www.linkedin.com/in/hermon-gebre-03290a228/)
  
 **Author2**
  *[Precious Betine]*
  
-- GitHub: [@githubhandle](https://github.com/preciousbetine) 
+- [GitHub profile](https://github.com/preciousbetine) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,7 +151,7 @@ npx eslint .
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-- Projects: [https://github.com/HERMON-1995/Module-2-capstone-project/projects/1]
+- [Projects](https://github.com/HERMON-1995/Module-2-capstone-project/projects/1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
