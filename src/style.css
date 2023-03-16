@@ -230,6 +230,7 @@ form textarea {
   padding: 10px;
   width: 100%;
   font-size: 15px;
+  resize: none;
 }
 
 form .submit {

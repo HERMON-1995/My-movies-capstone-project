@@ -96,16 +96,11 @@ const createComment = () => {
   commentField.value = '';
 };
 
-const form = document.querySelector('form');
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  createComment();
-});
-
 export {
   addLike,
   getMovieLikes,
   setMovieId,
   getMovieId,
+  createComment,
   displayComments,
 };
