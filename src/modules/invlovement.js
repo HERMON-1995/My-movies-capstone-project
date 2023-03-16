@@ -1,5 +1,6 @@
 const baseUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi';
 const appID = 'NPgV5E1zHcIqM2oujsnW';
+const commentList = document.querySelector('.comments');
 
 const getLikes = async () => {
   const response = await fetch(`${baseUrl}/apps/${appID}/likes`);
@@ -48,11 +49,9 @@ const getComments = async (itemId) => {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error(error);
     return null;
   }
 };
-const commentList = document.querySelector('.comments');
 
 const displayComments = async (itemId) => {
   commentList.innerHTML = '';
@@ -96,16 +95,11 @@ const createComment = () => {
   commentField.value = '';
 };
 
-const form = document.querySelector('form');
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  createComment();
-});
-
 export {
   addLike,
   getMovieLikes,
   setMovieId,
   getMovieId,
+  createComment,
   displayComments,
 };
