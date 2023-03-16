@@ -36,10 +36,10 @@ const addLike = async (id) => {
 let movieId;
 
 const setMovieId = (id) => {
-  movieId = id;
+  movieId = `movie${id}`;
 }
 
-
+const getMovieId = () => movieId;
 
 
 const getComments = async (itemId) => {
@@ -56,9 +56,10 @@ const getComments = async (itemId) => {
 const commentList = document.querySelector('.comments');
 
 const displayComments = async (itemId) => {
+  commentList.innerHTML = '';
   const comments = await getComments(itemId);
 
-  comments.forEach((comment) => { 
+  comments.forEach((comment) => {
     const li = document.createElement('li');
     li.className = 'usercomments';
     li.innerHTML = `<span class="date">${comment.creation_date}</span>📽️<span class="date">${comment.username}: </span><span class="date">"${comment.comment}"</span>`;
@@ -106,5 +107,7 @@ form.addEventListener('submit', (event) => {
 export {
   addLike,
   getMovieLikes,
-  setMovieId
+  setMovieId,
+  getMovieId,
+  displayComments,
 };
