@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-import countMovies from "../modules/movies-counter.js";
+import countMovies from '../modules/movies-counter.js';
 
 describe('Test movie counter', () => {
   it('Should count all movies displayed on the page', () => {
