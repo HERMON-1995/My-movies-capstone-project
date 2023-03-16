@@ -31,16 +31,15 @@ const addLike = async (id) => {
   });
   const data = await response.text();
   return data;
-}
+};
 
 let movieId;
 
 const setMovieId = (id) => {
   movieId = `movie${id}`;
-}
+};
 
 const getMovieId = () => movieId;
-
 
 const getComments = async (itemId) => {
   try {
@@ -65,7 +64,7 @@ const displayComments = async (itemId) => {
     li.innerHTML = `<span class="date">${comment.creation_date}</span>📽️<span class="date">${comment.username}: </span><span class="date">"${comment.comment}"</span>`;
     commentList.appendChild(li);
   });
-}
+};
 
 const addComment = async (itemId, name, comment) => {
   const url = `${baseUrl}/apps/${appID}/comments`;
@@ -77,7 +76,7 @@ const addComment = async (itemId, name, comment) => {
     body: JSON.stringify({
       item_id: itemId,
       username: name,
-      comment: comment,
+      comment,
     }),
   });
   const data = await response.text();
@@ -94,7 +93,7 @@ const createComment = () => {
   addComment(movieId, username, comment);
 
   usernameField.value = '';
-  commentField.value= '';
+  commentField.value = '';
 };
 
 const form = document.querySelector('form');
@@ -102,7 +101,6 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   createComment();
 });
-
 
 export {
   addLike,
