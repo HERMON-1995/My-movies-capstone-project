@@ -1,4 +1,4 @@
-import { addLike, getMovieLikes } from './invlovement.js';
+import { addLike, getMovieLikes, setMovieId } from './invlovement.js';
 import showPopup from './popup.js';
 
 const generateMovieTile = async (movie) => {
@@ -25,6 +25,7 @@ const generateMovieTile = async (movie) => {
 
   const commentsButton = movieTile.querySelector('.movie-interactions > button');
   commentsButton.addEventListener('click', () => {
+    setMovieId(movie.id);
     showPopup(movie);
   });
 
