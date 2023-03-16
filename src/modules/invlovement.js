@@ -59,10 +59,8 @@ const commentTitle = document.querySelector('.comment-counter');
 
 const displayComments = async (itemId) => {
   commentList.innerHTML = '';
-  commentTitle.innerHTML = 'Comments(0)';
+  commentTitle.innerHTML = 'Comments (0)';
   const comments = await getComments(itemId);
-
-  commentCounter(comments, commentTitle);
 
   comments.forEach((comment) => {
     const li = document.createElement('li');
@@ -70,6 +68,9 @@ const displayComments = async (itemId) => {
     li.innerHTML = `<span class="date">${comment.creation_date}</span>📽️<span class="date">${comment.username}: </span><span class="date">"${comment.comment}"</span>`;
     commentList.appendChild(li);
   });
+
+  const numComments = commentCounter();
+  commentTitle.innerHTML = `Comments (${numComments})`;
 };
 
 const addComment = async (itemId, name, comment) => {
