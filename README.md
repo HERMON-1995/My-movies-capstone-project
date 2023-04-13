@@ -58,7 +58,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [See live here](https://hermon-1995.github.io/Module-2-capstone-project/dist/).
+- [See live here](https://hermon-1995.github.io/My-movies-capstone-project/dist/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
