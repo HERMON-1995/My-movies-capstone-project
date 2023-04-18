@@ -1,4 +1,4 @@
-# Module-2-capstone-project
+# My-movies-capstone-project
 
 <a name="readme-top"></a>
 
@@ -27,9 +27,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Module-2-capstone-project] <a name="about-project"></a>
+# 📖 [My-movies-capstone-project] <a name="about-project"></a>
 
-**[Module-2-capstone-project]** is about building our own web application based on an external API using HTML/CSS and JavaScript. The webapp have 2 user interfaces with webpack and jest dependencies.
+**[My-movies-capstone-project]** is a web development project that uses an external TV maze API to create a personalized movie application. The project involves building two user interfaces and utilizing Webpack and Jest dependencies.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -58,7 +58,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [See live here](https://hermon-1995.github.io/My-movies-capstone-project/dist/).
+- [See live here](https://hermon-1995.github.io/My-movies-capstone-project/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -69,10 +69,10 @@
 
 ### Prerequisites
 
-In order to run this project you need:
+In order to run this project you need to:
 
 ```sh
-Webpack, linters and jest.
+Set up Webpack, linters and jest.
 ```
 
 ### Setup
@@ -80,13 +80,13 @@ Webpack, linters and jest.
 Clone this repository to your desired folder:
 
 ```sh
-  cd Module-2-capstone-project
-  git clone https://github.com/HERMON-1995/Module-2-capstone-project.git
+  cd My-movies-capstone-project
+  git clone https://github.com/HERMON-1995/My-movies-capstone-project.git
 ```
 ### Install
  
  ```sh
- cd Module-2-capstone-project
+ cd My-movies-capstone-project
  ```
  ```sh
  npm install
@@ -131,7 +131,7 @@ npx eslint .
  *[HERMON Gebre]*
  
 - [GitHub profile](https://github.com/HERMON-1995)
-- [LinkedIn](https://www.linkedin.com/in/hermon-gebre-03290a228/)
+- [LinkedIn](https://www.linkedin.com/in/hermon-gebre)
  
 **Author2**
  *[Precious Betine]*
@@ -151,7 +151,7 @@ npx eslint .
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-- [Projects](https://github.com/HERMON-1995/Module-2-capstone-project/projects/1)
+- [Projects](https://github.com/HERMON-1995/My-movies-capstone-project/projects/1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -167,7 +167,7 @@ If you like this project please show support by staring ⭐️.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-* we would like to give Microverse my sincerest gratitude for accommodating us in the Full-time Software Development program.
+* we would like to give Microverse our sincerest gratitude for accommodating us in the Full-time Software Development program.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
