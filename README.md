@@ -72,7 +72,8 @@
 In order to run this project you need to:
 
 ```sh
-Set up Webpack, linters and jest.
+Set up Webpack
+linters and jest.
 ```
 
 ### Setup
